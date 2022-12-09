@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>movie trailers</title>
+</head>
+
+<body>
+
+    <div id="fixedcontent">
+        <img src="https://miro.medium.com/max/425/0*f-89xH0H48CWkPN1.png" alt="comm">
+    </div>
+
+    <header>
+        <div id="web-page-title">Movie trailers</div>
+        <nav>
+            <ul>
+                <li onclick="allmoviesshow()">All</li>
+                <li onclick="action()">Action</li>
+                <li onclick="Comedy()">Comedy</li>
+                <li onclick="Drama()">Drama</li>
+                <li onclick="Fantasy()">Fantasy</li>
+                <li onclick="Horror()">Horror</li>
+                <li onclick="Thriller()">Thriller</li>
+                <li>
+                    <div>
+                        <input id="inp" type="text" oninput="inpsearch()">
+                        <button id="btn" onclick="searchmovie()">ძებნა</button>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section>
+        <div id="left-part">
+            <div class="left-part-element" id="iframing">
+            </div>
+            <div class="left-part-element">
+<a href="https://twitter.com/">   <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" width="30px" /> </a>
+<a href="https://www.facebook.com/"> <img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" width="35px" /> </a>
+ <a href="https://www.instagram.com/"  > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Black_Instagram_icon.svg/2048px-Black_Instagram_icon.svg.png" 
+                    width="30px" /> </a>
+            </div>
+
+
+
+            <div id="movies">
+            </div>
+    </section>
+
+
+
+</body>
+<script src="src/moviedata.js"></script>
+<script src="src/index.js"></script>
+
+</html>
